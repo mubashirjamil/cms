@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8fafc" />
+  <title>Sign in — CampusFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="./signin.js"></script>
+</head>
+<body class="min-h-screen">
+  <main class="grid min-h-screen lg:grid-cols-2">
+    <section class="flex min-h-screen flex-col justify-between bg-white px-6 py-7 sm:px-12 lg:px-16 xl:px-24">
+      <a href="./signin.html" class="flex w-fit items-center gap-3">
+        <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-600 text-white"><i data-lucide="graduation-cap" class="h-5 w-5"></i></span>
+        <span><span class="block text-base font-bold tracking-tight text-slate-900">CampusFlow</span><span class="text-[10px] font-semibold tracking-[0.16em] text-slate-400">COLLEGE PORTAL</span></span>
+      </a>
+      <div class="mx-auto w-full max-w-md py-12">
+        <div class="mb-8 flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600"><i data-lucide="lock-keyhole" class="h-5 w-5"></i></div>
+        <p class="text-sm font-semibold text-indigo-600">Welcome back</p>
+        <h1 class="mt-2 text-3xl font-bold tracking-tight text-slate-900">Sign in to your account</h1>
+        <p class="mt-2 text-sm leading-6 text-slate-500">Enter your college administrator details to continue.</p>
+        <form id="signin-form" class="mt-8 space-y-5">
+          <label class="block text-sm font-semibold text-slate-700">Email address<span class="relative mt-2 block"><i data-lucide="mail" class="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"></i><input id="email" class="field !py-3 !pl-10" type="email" autocomplete="username" required placeholder="you@college.edu" /></span></label>
+          <label class="block text-sm font-semibold text-slate-700">Password<span class="relative mt-2 block"><i data-lucide="key-round" class="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"></i><input id="password" class="field !py-3 !pl-10 !pr-11" type="password" autocomplete="current-password" required placeholder="Enter your password" /><button id="toggle-password" type="button" class="icon-button absolute right-2 top-1/2 -translate-y-1/2" aria-label="Show password"><i data-lucide="eye" class="h-4 w-4"></i></button></span></label>
+          <div id="signin-error" class="hidden rounded-xl border border-rose-100 bg-rose-50 px-3.5 py-3 text-sm text-rose-700" role="alert"></div>
+          <button id="submit-button" type="submit" class="primary-button w-full !py-3">Sign in<i data-lucide="arrow-right" class="h-4 w-4"></i></button>
+        </form>
+        <div class="mt-6 rounded-xl border border-indigo-100 bg-indigo-50/70 p-4"><p class="text-xs font-bold uppercase tracking-wide text-indigo-700">Demo administrator account</p><p class="mt-2 text-sm text-slate-600"><span class="font-semibold">Email:</span> admin@northbridge.edu</p><p class="mt-1 text-sm text-slate-600"><span class="font-semibold">Password:</span> Campus123!</p></div>
+        <p class="mt-6 text-center text-xs leading-5 text-slate-400">Demo sign-in only. For production, use a secure authentication service.</p>
+      </div>
+      <p class="text-xs text-slate-400">© 2026 Northbridge College</p>
+    </section>
+    <aside class="relative hidden overflow-hidden bg-indigo-700 p-12 text-white lg:flex lg:flex-col lg:justify-between xl:p-16">
+      <div class="absolute -right-28 -top-24 h-96 w-96 rounded-full border border-white/10"></div><div class="absolute -right-10 -top-6 h-60 w-60 rounded-full border border-white/10"></div><div class="absolute -bottom-40 -left-20 h-[30rem] w-[30rem] rounded-full bg-indigo-600/70"></div>
+      <div class="relative flex items-center gap-2 text-sm font-medium text-indigo-100"><i data-lucide="building-2" class="h-4 w-4"></i>Northbridge College</div>
+      <div class="relative max-w-lg"><div class="mb-8 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/10 backdrop-blur"><i data-lucide="layers-3" class="h-6 w-6"></i></div><h2 class="text-4xl font-bold leading-tight tracking-tight xl:text-5xl">Make campus life a little simpler.</h2><p class="mt-5 max-w-md text-base leading-7 text-indigo-100">One clear view of the people, programs, and everyday work that keep your college moving.</p><div class="mt-10 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur"><div class="flex -space-x-2"><span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-indigo-700 bg-amber-200 text-[10px] font-bold text-amber-800">M</span><span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-indigo-700 bg-emerald-200 text-[10px] font-bold text-emerald-800">J</span><span class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-indigo-700 bg-rose-200 text-[10px] font-bold text-rose-800">A</span></div><p class="text-xs leading-5 text-indigo-100"><span class="font-semibold text-white">A better campus overview</span><br />Made for your college team.</p></div></div>
+      <div class="relative flex items-center gap-2 text-xs text-indigo-200"><i data-lucide="shield-check" class="h-4 w-4"></i>College administration portal</div>
+    </aside>
+  </main>
+</body>
+</html>

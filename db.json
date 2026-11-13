@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ayesha Rahman",
+      "email": "admin@northbridge.edu",
+      "password": "Campus123!",
+      "role": "Administrator"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "studentId": "NC-2026-0142",
+      "name": "Maya Patel",
+      "email": "maya.patel@northbridge.edu",
+      "course": "Computer Science",
+      "year": "Year 2",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "studentId": "NC-2026-0141",
+      "name": "Ethan Brooks",
+      "email": "ethan.brooks@northbridge.edu",
+      "course": "Business Administration",
+      "year": "Year 3",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "studentId": "NC-2026-0140",
+      "name": "Sofia Chen",
+      "email": "sofia.chen@northbridge.edu",
+      "course": "Psychology",
+      "year": "Year 1",
+      "status": "On leave"
+    },
+    {
+      "id": 4,
+      "studentId": "NC-2026-0139",
+      "name": "Noah Williams",
+      "email": "noah.williams@northbridge.edu",
+      "course": "Biology",
+      "year": "Year 4",
+      "status": "Active"
+    },
+    {
+      "id": 5,
+      "studentId": "NC-2026-0138",
+      "name": "Amara Okafor",
+      "email": "amara.okafor@northbridge.edu",
+      "course": "Economics",
+      "year": "Year 2",
+      "status": "Active"
+    },
+    {
+      "id": 6,
+      "studentId": "NC-2026-0137",
+      "name": "Lucas Martin",
+      "email": "lucas.martin@northbridge.edu",
+      "course": "Graphic Design",
+      "year": "Year 1",
+      "status": "Active"
+    },
+    {
+      "id": 7,
+      "studentId": "NC-2026-0136",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@northbridge.edu",
+      "course": "Mathematics",
+      "year": "Year 3",
+      "status": "Active"
+    },
+    {
+      "id": 8,
+      "studentId": "NC-2026-0135",
+      "name": "Oliver James",
+      "email": "oliver.james@northbridge.edu",
+      "course": "English Literature",
+      "year": "Year 2",
+      "status": "Active"
+    },
+    {
+      "name": "Sameer",
+      "email": "sumeerahmed061@gmail.com",
+      "course": "Biology",
+      "year": "Year 1",
+      "status": "Active",
+      "studentId": "STU-06872",
+      "id": 9
+    }
+  ]
+}

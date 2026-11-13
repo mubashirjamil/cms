@@ -1,0 +1,22 @@
+{
+  "name": "campusflow-college-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small college management dashboard built with HTML, JavaScript, Tailwind CLI, and JSON Server.",
+  "scripts": {
+    "dev": "concurrently -k \"npm:css:watch\" \"npm:api\"",
+    "css:watch": "tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
+    "css:build": "tailwindcss -i ./src/input.css -o ./public/styles.css --minify",
+    "api": "json-server --watch db.json --port 3000",
+    "serve": "http-server ./public -p 5173 -c-1"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "concurrently": "^9.1.2",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^4.1.17"
+  },
+  "dependencies": {
+    "json-server": "0.17.4"
+  }
+}
